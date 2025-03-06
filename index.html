@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body>
+<body class="dark-mode">
 
-    <!-- Dark Mode Toggle -->
+    <!-- Theme Toggle -->
     <div class="theme-toggle">
         <input type="checkbox" id="theme-switch">
-        <label for="theme-switch">🌙</label>
+        <label for="theme-switch" class="toggle-label">🌙</label>
     </div>
 
     <!-- Hero Section -->
@@ -20,7 +20,7 @@
         <div class="hero-content">
             <h1>Ajit Lenka</h1>
             <p class="sub-heading">DevOps Engineer | Cloud | Automation</p>
-            <a href="#contact" class="cta-btn">Get in Touch</a>
+            <a href="#contact" class="cta-btn">Contact Me</a>
         </div>
     </header>
 
@@ -36,9 +36,9 @@
 
     <!-- About Section -->
     <section id="about" class="section">
-        <div class="container">
+        <div class="container glass">
             <h2>About Me</h2>
-            <p>I specialize in CI/CD, cloud automation, and infrastructure as code. Passionate about optimizing workflows and delivering scalable solutions.</p>
+            <p>I specialize in CI/CD, cloud automation, and infrastructure as code.</p>
         </div>
     </section>
 
@@ -47,45 +47,22 @@
         <div class="container">
             <h2>Skills & Tools</h2>
             <div class="skills-grid">
-                <div class="skill-card">AWS</div>
-                <div class="skill-card">Docker</div>
-                <div class="skill-card">Kubernetes</div>
-                <div class="skill-card">Terraform</div>
-                <div class="skill-card">Jenkins</div>
-                <div class="skill-card">Prometheus</div>
-                <div class="skill-card">GitHub Actions</div>
-                <div class="skill-card">Python</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>CI/CD Pipeline</h3>
-                    <p>Automated CI/CD pipeline using Jenkins & Docker.</p>
-                    <a href="https://github.com/yourgithubrepo" target="_blank">View</a>
-                </div>
-                <div class="project-card">
-                    <h3>Kubernetes Deployment</h3>
-                    <p>Deployed a scalable app using Kubernetes & Helm.</p>
-                    <a href="https://github.com/yourgithubrepo" target="_blank">View</a>
-                </div>
+                <div class="skill-card big">AWS</div>
+                <div class="skill-card small">Docker</div>
+                <div class="skill-card big">Kubernetes</div>
+                <div class="skill-card small">Terraform</div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section">
-        <div class="container">
+        <div class="container glass">
             <h2>Contact Me</h2>
-            <form action="https://formsubmit.co/your-email@example.com" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
         </div>
