@@ -22,13 +22,22 @@ nav ul {
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    list-style: none;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
 }
 
+/* Theme Toggle Button */
 #theme-toggle {
     background: none;
     border: none;
@@ -117,6 +126,11 @@ button {
 
 .light-mode nav {
     background: rgba(0, 0, 0, 0.1);
+}
+
+/* Fix for navigation text in light mode */
+.light-mode nav ul li a {
+    color: black !important; /* Ensures visibility in light mode */
 }
 
 .light-mode button {
