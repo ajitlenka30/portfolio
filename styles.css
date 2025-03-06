@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 
 /* Light Theme */
@@ -15,21 +15,57 @@ body.light-mode {
 
 /* Dark Theme */
 body.dark-mode {
-    background: #000;
+    background: #121212;
     color: white;
 }
 
-/* Glass Effect */
+/* Glassmorphism */
 .glass {
     background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    padding: 20px;
     border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: cyan;
 }
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,58 +77,35 @@ body.dark-mode {
     background: rgba(0, 0, 0, 0.6);
     padding: 30px;
     border-radius: 10px;
-}
-
-/* Navigation */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px 0;
-    backdrop-filter: blur(10px);
-}
-
-.navbar ul {
-    padding: 0;
-    list-style: none;
-}
-
-.navbar ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.navbar ul li a {
     color: white;
+}
+
+.cta-btn {
+    background: cyan;
+    padding: 10px 20px;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 18px;
+    color: black;
+    font-weight: bold;
 }
 
 /* Skills Grid */
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
+    justify-content: center;
     gap: 20px;
-    margin-top: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
-/* Big & Small Cards */
-.skill-card, .project-card {
+.skill-card {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    transition: 0.3s;
-}
-
-.skill-card.big, .project-card.big {
-    font-size: 20px;
-    padding: 30px;
-}
-
-.skill-card.small, .project-card.small {
-    font-size: 16px;
-    padding: 15px;
+    text-align: center;
+    min-width: 150px;
+    flex: 1;
+    max-width: 250px;
 }
 
 /* Contact Form */
@@ -112,7 +125,7 @@ input, textarea {
 }
 
 button {
-    background: white;
+    background: cyan;
     color: black;
     padding: 10px;
     border: none;
