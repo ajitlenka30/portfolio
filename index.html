@@ -7,34 +7,20 @@
     <link rel="stylesheet" href="styles.css">
     <script defer src="script.js"></script>
 </head>
-<body class="dark-mode">
-
-    <!-- Theme Toggle -->
-    <div class="theme-toggle">
-        <input type="checkbox" id="theme-switch">
-        <label for="theme-switch" class="toggle-label">🌙</label>
-    </div>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
+<body>
+    <header>
+        <nav>
             <h1>Ajit Lenka</h1>
-            <p class="sub-heading">DevOps Engineer | Cloud | Automation</p>
-            <a href="#contact" class="cta-btn">Contact Me</a>
-        </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
     </header>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container glass">
             <h2>About Me</h2>
@@ -42,7 +28,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section">
         <div class="container glass">
             <h2>Skills & Tools</h2>
@@ -51,11 +36,34 @@
                 <div class="skill-card">Docker</div>
                 <div class="skill-card">Kubernetes</div>
                 <div class="skill-card">Terraform</div>
+                <div class="skill-card">Jenkins</div>
+                <div class="skill-card">Ansible</div>
+                <div class="skill-card">GitHub Actions</div>
+                <div class="skill-card">Linux</div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <section id="projects" class="section">
+        <div class="container glass">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>CI/CD Pipeline</h3>
+                    <p>Automated CI/CD pipeline with Jenkins, Docker & Kubernetes.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Infrastructure as Code</h3>
+                    <p>Used Terraform & AWS CloudFormation for infra automation.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Cloud Monitoring</h3>
+                    <p>Implemented monitoring using Prometheus & Grafana.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="contact" class="section">
         <div class="container glass">
             <h2>Contact Me</h2>
@@ -67,10 +75,6 @@
             </form>
         </div>
     </section>
-
-    <footer>
-        <p>© 2025 Ajit Lenka. All Rights Reserved.</p>
-    </footer>
 
 </body>
 </html>
